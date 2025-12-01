@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: #cb1c22;
+            width: 100%;
+            height: 80px;
+            margin: 0px;
+        }
+
+        .container-content {
+            width: 900px;
+            /* Đặt độ rộng cố định là 800px */
+            margin: 0 auto;
+            /* Căn giữa phần tử body theo chiều ngang */
+            padding: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .but-Header {
+            background-color: #7e161c;
+            color: white;
+            border-radius: 20px;
+            border: 0;
+            height: 33px;
+            width: 110px;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container-content">
+            <!-- logoFsoft -->
+            <div style="padding-top: 20px;">
+                <img width="115px" height="30px" src="/images/logoFsoft.png" alt="">
+            </div>
+
+            <!-- Phan DANH MUC -->
+            <div style="padding-top: 20px;display: flex; justify-content: center; align-items: center; gap: 5px;">
+                <div class="dropdown" style="display: inline-block;">
+                    <button class="but-Header">
+                        <i class="fas fa-stream"></i>
+                        <span style="font-size: 14px;"> Danh mục </span>
+                    </button>
+                    <div style="border-radius: 15px;" class="dropdown-content">
+                        <a style="border-radius: 15px;">
+                            <div>
+                                <i class="fas fa-laptop"></i>&nbsp; &leftrightharpoons;
+                                <span style="font-size: 10px;">Laptop</span>
+                            </div>
+                        </a>
+                        <hr>
+                        <a>
+                            <div>
+                                <i class="fab fa-apple fa-lg"></i>&nbsp; &leftrightharpoons;
+                                <span style="font-size: 10px;">Chuyên trang Apple</span>
+                            </div>
+                        </a>
+                        <a style="border-radius: 15px;">
+                            <div>
+                                <i class="fas fa-mobile-alt"></i>&nbsp; &leftrightharpoons;
+                                <span style="font-size: 10px;">Điện thoại</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- PHAN SEARCH -->
+                <div>
+                    <div style="position: relative; display: inline-block;">
+                        <input type="text" placeholder="&nbsp; &nbsp;Nhập tên máy tính cần tìm ... "
+                            style="border-radius: 15px; height: 33px; width: 400px; border: 0px; padding-right: 30px; font-size: 10px; color: gray;">
+                        <div style="background-color: rgb(250, 219, 224); border-radius: 100%;
+                        padding-left: 5px; position: absolute; right: 5px; top: 50%; transform: translateY(-50%);">
+                            <i style="color: #d52121; width: 20px;" class="fas fa-search fa-sm"></i>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div style="padding-top: 20px; display: flex; justify-content: center; align-items: center; gap: 5px;">
+
+                <div class="dropdown" style="display: inline-block;">
+                    <div>
+                        <i class="fas fa-user-circle fa-lg" style="color: black;"></i>
+                    </div>
+                    <div style="border-radius: 15px;" class="dropdown-content">
+                        <a style="border-radius: 15px;">
+                            <div>
+                                <i style="width: 20px;" class="fas fa-laptop"></i>&nbsp; &leftrightharpoons;
+                                <span style="font-size: 10px;">Đăng nhập</span>
+                            </div>
+                        </a>
+                        <a style="border-radius: 15px;">
+                            <div>
+                                <i style="width: 20px;" class="fas fa-mobile-alt"></i>&nbsp; &leftrightharpoons;
+                                <span style="font-size: 10px;">Đăng ký</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <button class="but-Header" style="background-color: #000000;">
+                    <i class="fas fa-shopping-cart fa-sm"></i>
+                    <span style="font-size: 14px;"> Giỏ hàng </span>
+                </button>
+            </div>
+
+        </div>
+    </header>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
